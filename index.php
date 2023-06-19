@@ -1,5 +1,5 @@
 <?php
 
-header('Location: relatorio.php');
+header('Location: reportform.php');
 
 ?>
