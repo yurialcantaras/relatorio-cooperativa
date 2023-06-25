@@ -13,7 +13,7 @@
 <body>
   <div class="card">
     <h2>Relatório da Colportagem</h2>
-    <form>
+    <form action="inputs/login.input.php">
       <div class="form-group">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required>

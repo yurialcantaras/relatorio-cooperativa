@@ -1,0 +1,8 @@
+{
+    "db":{
+        "host": "localhost",
+        "dbh": "studies",
+        "user": "root",
+        "pword": "12345"
+    }
+}
