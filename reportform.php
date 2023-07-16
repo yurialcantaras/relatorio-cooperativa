@@ -13,7 +13,7 @@
 <body>
   <div class="card">
     <h2>Relatório da Colportagem</h2>
-    <form action="inputs/login.input.php">
+    <form action="inputs/login.input.php" method="POST">
       <div class="form-group">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required>
@@ -47,7 +47,7 @@
         <input type="number" id="valor-cartao" name="valor-cartao" step="0.01" required>
       </div>
       <div class="form-group">
-        <button type="submit">Enviar</button>
+        <button type="submit" name="reportForm">Enviar</button>
       </div>
     </form>
   </div>

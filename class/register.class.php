@@ -2,23 +2,25 @@
 
 class register extends dbh{
 
-public $usr;
-public $pwd;
-public $pwd2;
+// Após o uso de teste, remover dados de login
+// public $usr = "cooperativacambe@gmail.com";
+// public $pwd = "Salmos1103";
+// public $pwd2;
 
-public function login($usr,$pwd){
+public function Login($usr,$pwd){
 
-    $sql = "SELECT * FROM users WHERE user_name = ? AND user_password = ?";
+    $sql = "SELECT * FROM users WHERE user_email = ? AND user_password = ?";
     $login = $this->connection()->prepare($sql);
-    
-    // Criar um if para então retorno do resultado
-        return $login->execute([$usr, $pwd]);
 
-}
+    if ($login) {
 
-public function register(){
+        return $login->execute([$usr,$pwd]);
 
-    
+    }else{
+
+        echo "Cadastro";
+
+    }
 
 }
 
